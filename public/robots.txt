@@ -1,4 +1,34 @@
-User-agent: *
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: GPTBot
+Disallow: /
+
+User-Agent: Claude-SearchBot
+Allow: /
+
+User-Agent: Claude-User
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: Bytespider
+Disallow: /
+
+User-Agent: *
 Allow: /
 
 Sitemap: https://tazel.net/sitemap.xml
