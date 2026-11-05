@@ -15,7 +15,8 @@
     "check": "nuxt typecheck",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test:coverage": "c8 --reporter=lcov --reporter=text --include=app/content/locales.ts npm test"
   },
   "dependencies": {
     "@nuxt/content": "3.16.2",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "24.19.2",
+    "c8": "12.0.0",
     "prettier": "3.9.10",
     "typescript": "5.9.3",
     "vue-tsc": "3.3.13"
