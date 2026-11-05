@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Progmasoft <support@progmasoft.com>
+# SPDX-License-Identifier: AGPL-3.0-or-later WITH AdditionRef-Progmasoft-Patent-Grant-1.1
+
+coverage:
+  precision: 2
+  round: nearest
+  status:
+    project:
+      default:
+        threshold: 2%
+    patch:
+      default:
+        target: 80%
+
+codecov:
+  branch: main
+
+comment:
+  layout: "diff"
