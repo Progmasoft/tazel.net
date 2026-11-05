@@ -1,0 +1,7 @@
+Copyright 2026 Progmasoft <support@progmasoft.com>
+
+Project-owned source code is licensed under AGPL-3.0-or-later with the Progmasoft Patent Grant, Version 1.1.
+See LICENSE.txt, PATENTS, and LICENSES/AdditionRef-Progmasoft-Patent-Grant-1.1.txt.
+
+The Tazel logo and the social preview image are marks of Progmasoft; the licence of the code does not grant use of them
+as marks.

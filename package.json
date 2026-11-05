@@ -1,0 +1,30 @@
+{
+  "name": "@progmasoft/tazel-net",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later WITH AdditionRef-Progmasoft-Patent-Grant-1.1",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "check": "nuxt typecheck",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@nuxt/content": "3.16.2",
+    "nuxt": "4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3",
+    "vue-tsc": "3.3.13"
+  }
+}

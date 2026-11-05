@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tazel.net/sitemap.xml

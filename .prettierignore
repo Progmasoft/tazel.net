@@ -1,0 +1,9 @@
+.nuxt/
+.output/
+node_modules/
+package-lock.json
+public/
+LICENSE.txt
+PATENTS
+LICENSES/
+content/
