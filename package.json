@@ -22,6 +22,10 @@
     "@nuxt/content": "3.16.2",
     "nuxt": "4.6.4"
   },
+  "overrides": {
+    "glob": "^14.0.4",
+    "minimatch": "^11.0.5"
+  },
   "devDependencies": {
     "@types/node": "24.19.2",
     "c8": "12.0.0",
