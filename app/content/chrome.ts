@@ -17,8 +17,7 @@ export const chrome: Record<Locale, Chrome> = {
     copy: "Copy",
     copied: "Copied",
     footer: {
-      tagline: "The build system and package manager of Tala.",
-      family: "Tala",
+      tagline: "A build system and package manager with a Kotlin project file.",
       company: "Progmasoft",
       license: "Tazel is free software under MPL-2.0 with the Progmasoft Exception 2.0.",
     },
@@ -54,8 +53,7 @@ export const chrome: Record<Locale, Chrome> = {
     copy: "Kopieren",
     copied: "Kopiert",
     footer: {
-      tagline: "Das Build-System und der Paketmanager von Tala.",
-      family: "Tala",
+      tagline: "Ein Build-System und Paketmanager mit einer Projektdatei in Kotlin.",
       company: "Progmasoft",
       license: "Tazel ist freie Software unter MPL-2.0 mit der Progmasoft Exception 2.0.",
     },
@@ -91,8 +89,7 @@ export const chrome: Record<Locale, Chrome> = {
     copy: "Копировать",
     copied: "Скопировано",
     footer: {
-      tagline: "Система сборки и менеджер пакетов Tala.",
-      family: "Tala",
+      tagline: "Система сборки и менеджер пакетов с файлом проекта на Kotlin.",
       company: "Progmasoft",
       license: "Tazel — свободное ПО под MPL-2.0 с Progmasoft Exception 2.0.",
     },
@@ -128,8 +125,7 @@ export const chrome: Record<Locale, Chrome> = {
     copy: "העתקה",
     copied: "הועתק",
     footer: {
-      tagline: "מערכת הבנייה ומנהל החבילות של Tala.",
-      family: "Tala",
+      tagline: "מערכת בנייה ומנהל חבילות עם קובץ פרויקט ב-Kotlin.",
       company: "Progmasoft",
       license: "‏Tazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
     },

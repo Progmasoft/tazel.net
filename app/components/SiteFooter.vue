@@ -16,17 +16,12 @@ const words = computed(() => chrome[locale.value]);
         <TazelLogo class="logo" />
         <p>{{ words.footer.tagline }}</p>
       </div>
-      <nav :aria-label="words.footer.family">
-        <h2>{{ words.footer.family }}</h2>
+      <nav :aria-label="words.footer.company">
+        <h2>{{ words.footer.company }}</h2>
         <ul>
           <li><a :href="family.tala">Tala</a></li>
           <li><a :href="family.talac">Talac</a></li>
           <li><a :href="family.viget">ViGet</a></li>
-        </ul>
-      </nav>
-      <nav :aria-label="words.footer.company">
-        <h2>{{ words.footer.company }}</h2>
-        <ul>
           <li><a :href="family.progmasoft">progmasoft.com</a></li>
         </ul>
       </nav>
@@ -47,7 +42,7 @@ const words = computed(() => chrome[locale.value]);
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   gap: 32px;
 }
 

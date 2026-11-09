@@ -15,7 +15,6 @@ export type Chrome = {
   copied: string;
   footer: {
     tagline: string;
-    family: string;
     company: string;
     license: string;
   };
