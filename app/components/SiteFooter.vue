@@ -3,9 +3,9 @@
 
 <script setup lang="ts">
 import { chrome } from "~/content/chrome";
-import { family, firstDocPage, reference, releaseNotes, repository } from "~/content/site";
+import { family } from "~/content/site";
 
-const { locale, to } = useSiteLocale();
+const { locale } = useSiteLocale();
 const words = computed(() => chrome[locale.value]);
 </script>
 
@@ -16,26 +16,6 @@ const words = computed(() => chrome[locale.value]);
         <TazelLogo class="logo" />
         <p>{{ words.footer.tagline }}</p>
       </div>
-      <nav :aria-label="words.footer.product">
-        <h2>{{ words.footer.product }}</h2>
-        <ul>
-          <li>
-            <NuxtLink :to="to(firstDocPage)">{{ words.docs }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="to('/docs/reference/commands')">{{ words.reference }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="to('/docs/extending/plugins')">{{ words.plugins }}</NuxtLink>
-          </li>
-          <li>
-            <a :href="releaseNotes">{{ words.footer.releaseNotes }}</a>
-          </li>
-          <li>
-            <a :href="reference.commands">{{ words.footer.reference }}</a>
-          </li>
-        </ul>
-      </nav>
       <nav :aria-label="words.footer.family">
         <h2>{{ words.footer.family }}</h2>
         <ul>
@@ -48,9 +28,6 @@ const words = computed(() => chrome[locale.value]);
         <h2>{{ words.footer.company }}</h2>
         <ul>
           <li><a :href="family.progmasoft">progmasoft.com</a></li>
-          <li>
-            <a :href="repository">{{ words.source }}</a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -70,7 +47,7 @@ const words = computed(() => chrome[locale.value]);
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-columns: 2fr repeat(2, 1fr);
   gap: 32px;
 }
 

@@ -8,13 +8,9 @@ import { firstDocPage, repository } from "~/content/site";
 
 const { locale, page, to } = useSiteLocale();
 const words = computed(() => chrome[locale.value]);
-// Each link is current on every page of its part of the documentation.
-const links = computed(() => [
-  { label: words.value.docs, path: firstDocPage, part: "/docs/getting-started" },
-  { label: words.value.reference, path: "/docs/reference/commands", part: "/docs/reference" },
-  { label: words.value.plugins, path: "/docs/extending/plugins", part: "/docs/extending" },
-]);
-const releases = `${repository}/releases`;
+// The one link of the header leads into the documentation and is current on
+// every page of it.
+const links = computed(() => [{ label: words.value.docs, path: firstDocPage, part: "/docs" }]);
 
 // A menu closes when a link in it is followed.
 const route = useRoute();
@@ -44,7 +40,6 @@ watch(
           :class="{ active: page.startsWith(link.part) }"
           >{{ link.label }}</NuxtLink
         >
-        <a :href="releases">{{ words.releases }}</a>
       </nav>
 
       <div class="tools">
@@ -87,9 +82,6 @@ watch(
           <ul>
             <li v-for="link in links" :key="link.path">
               <NuxtLink :to="to(link.path)">{{ link.label }}</NuxtLink>
-            </li>
-            <li>
-              <a :href="releases">{{ words.releases }}</a>
             </li>
           </ul>
         </details>

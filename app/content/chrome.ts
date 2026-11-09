@@ -7,10 +7,7 @@ import type { Chrome } from "./types";
 export const chrome: Record<Locale, Chrome> = {
   "en-US": {
     skip: "Skip to content",
-    docs: "Docs",
-    reference: "Reference",
-    plugins: "Plugins",
-    releases: "Releases",
+    docs: "Document",
     getStarted: "Get started",
     source: "Source",
     language: "Language",
@@ -21,11 +18,8 @@ export const chrome: Record<Locale, Chrome> = {
     copied: "Copied",
     footer: {
       tagline: "The build system and package manager of Tala.",
-      product: "Tazel",
       family: "Tala",
       company: "Progmasoft",
-      releaseNotes: "Release notes",
-      reference: "Full reference",
       license: "Tazel is free software under MPL-2.0 with the Progmasoft Exception 2.0.",
     },
     docsNav: {
@@ -50,10 +44,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "de-DE": {
     skip: "Zum Inhalt springen",
-    docs: "Doku",
-    reference: "Referenz",
-    plugins: "Plugins",
-    releases: "Releases",
+    docs: "Dokument",
     getStarted: "Loslegen",
     source: "Quellcode",
     language: "Sprache",
@@ -64,11 +55,8 @@ export const chrome: Record<Locale, Chrome> = {
     copied: "Kopiert",
     footer: {
       tagline: "Das Build-System und der Paketmanager von Tala.",
-      product: "Tazel",
       family: "Tala",
       company: "Progmasoft",
-      releaseNotes: "Versionshinweise",
-      reference: "Vollständige Referenz",
       license: "Tazel ist freie Software unter MPL-2.0 mit der Progmasoft Exception 2.0.",
     },
     docsNav: {
@@ -93,10 +81,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "ru-RU": {
     skip: "Перейти к содержанию",
-    docs: "Документация",
-    reference: "Справочник",
-    plugins: "Плагины",
-    releases: "Выпуски",
+    docs: "Документ",
     getStarted: "Начать",
     source: "Исходный код",
     language: "Язык",
@@ -107,11 +92,8 @@ export const chrome: Record<Locale, Chrome> = {
     copied: "Скопировано",
     footer: {
       tagline: "Система сборки и менеджер пакетов Tala.",
-      product: "Tazel",
       family: "Tala",
       company: "Progmasoft",
-      releaseNotes: "Примечания к выпуску",
-      reference: "Полный справочник",
       license: "Tazel — свободное ПО под MPL-2.0 с Progmasoft Exception 2.0.",
     },
     docsNav: {
@@ -136,10 +118,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "he-IL": {
     skip: "דילוג לתוכן",
-    docs: "תיעוד",
-    reference: "עיון",
-    plugins: "תוספים",
-    releases: "גרסאות",
+    docs: "מסמך",
     getStarted: "מתחילים",
     source: "קוד מקור",
     language: "שפה",
@@ -150,11 +129,8 @@ export const chrome: Record<Locale, Chrome> = {
     copied: "הועתק",
     footer: {
       tagline: "מערכת הבנייה ומנהל החבילות של Tala.",
-      product: "Tazel",
       family: "Tala",
       company: "Progmasoft",
-      releaseNotes: "הערות גרסה",
-      reference: "תיעוד מלא",
       license: "‏Tazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
     },
     docsNav: {

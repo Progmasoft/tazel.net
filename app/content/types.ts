@@ -5,9 +5,6 @@
 export type Chrome = {
   skip: string;
   docs: string;
-  reference: string;
-  plugins: string;
-  releases: string;
   getStarted: string;
   source: string;
   language: string;
@@ -18,11 +15,8 @@ export type Chrome = {
   copied: string;
   footer: {
     tagline: string;
-    product: string;
     family: string;
     company: string;
-    releaseNotes: string;
-    reference: string;
     license: string;
   };
   notFound: { title: string; text: string; home: string };
