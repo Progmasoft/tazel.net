@@ -4,13 +4,7 @@
 <script setup lang="ts">
 import { home, projectSample, terminalSample } from "~/content/home";
 import { localeOfPrefix } from "~/content/locales";
-import {
-  firstDocPage,
-  latestChannel,
-  latestRelease,
-  releaseNotes,
-  repository,
-} from "~/content/site";
+import { repository } from "~/content/site";
 
 definePageMeta({
   validate: (route) =>
@@ -34,12 +28,6 @@ const headline = computed(() => {
     <section class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <a class="release" :href="releaseNotes">
-            <span class="badge"
-              >{{ text.release.replace("{version}", latestRelease) }} · {{ latestChannel }}</span
-            >
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
           <p class="eyebrow">{{ text.eyebrow }}</p>
           <h1>
             {{ headline.first }}
@@ -47,7 +35,9 @@ const headline = computed(() => {
           </h1>
           <p class="lead"><ProseText :text="text.lead" /></p>
           <div class="actions">
-            <NuxtLink class="button button-gold" :to="to(firstDocPage)">{{ text.start }}</NuxtLink>
+            <NuxtLink class="button button-gold" :to="to('/docs/getting-started/first-project')">{{
+              text.start
+            }}</NuxtLink>
             <NuxtLink class="button button-ghost" :to="to('/docs/reference/commands')">{{
               text.commands
             }}</NuxtLink>
@@ -134,38 +124,8 @@ const headline = computed(() => {
   min-width: 0;
 }
 
-.release {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 14px 4px 4px;
-  border: 1px solid rgb(255 255 255 / 18%);
-  border-radius: 999px;
-  color: #d9eaed;
-  font-size: 0.9rem;
-}
-
-.release:hover {
-  border-color: rgb(255 255 255 / 40%);
-  text-decoration: none;
-}
-
-/* The arrow points onward in the reading direction. */
-:root[dir="rtl"] .arrow {
-  display: inline-block;
-  transform: scaleX(-1);
-}
-
-.badge {
-  padding: 2px 10px;
-  border-radius: 999px;
-  background: var(--gold);
-  color: var(--brand-950);
-  font-weight: 700;
-}
-
 .eyebrow {
-  margin: 28px 0 10px;
+  margin: 0 0 10px;
   color: var(--gold);
   font-weight: 650;
   letter-spacing: 0.04em;

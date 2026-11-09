@@ -3,7 +3,7 @@
 
 <script setup lang="ts">
 import { chrome } from "~/content/chrome";
-import { family } from "~/content/site";
+import { family, repository } from "~/content/site";
 
 const { locale } = useSiteLocale();
 const words = computed(() => chrome[locale.value]);
@@ -25,9 +25,26 @@ const words = computed(() => chrome[locale.value]);
           <li><a :href="family.progmasoft">progmasoft.com</a></li>
         </ul>
       </nav>
+      <nav :aria-label="words.footer.project">
+        <h2>{{ words.footer.project }}</h2>
+        <ul>
+          <li>
+            <a :href="`${repository}/issues/new`">{{ words.footer.issues }}</a>
+          </li>
+          <li>
+            <a :href="`${repository}/blob/main/CHANGELOG.md`">{{ words.footer.changelog }}</a>
+          </li>
+          <li>
+            <a :href="`${repository}/blob/main/LICENSE.txt`">{{ words.footer.license }}</a>
+          </li>
+          <li>
+            <a href="mailto:support@progmasoft.com">{{ words.footer.contact }}</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="shell legal">
-      <p>{{ words.footer.license }}</p>
+      <p>{{ words.footer.notice }}</p>
       <p>© 2026 Progmasoft</p>
     </div>
   </footer>
@@ -42,7 +59,7 @@ const words = computed(() => chrome[locale.value]);
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr repeat(2, 1fr);
   gap: 32px;
 }
 

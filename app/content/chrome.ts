@@ -8,7 +8,8 @@ export const chrome: Record<Locale, Chrome> = {
   "en-US": {
     skip: "Skip to content",
     docs: "Document",
-    getStarted: "Get started",
+    releaseNotes: "Release notes",
+    search: { label: "Search the documentation", placeholder: "Search", empty: "Nothing found." },
     source: "Source",
     language: "Language",
     toDark: "Switch to the dark theme",
@@ -19,7 +20,12 @@ export const chrome: Record<Locale, Chrome> = {
     footer: {
       tagline: "A build system and package manager with a Kotlin project file.",
       company: "Progmasoft",
-      license: "Tazel is free software under MPL-2.0 with the Progmasoft Exception 2.0.",
+      project: "Project",
+      issues: "Report an issue",
+      changelog: "Changelog",
+      license: "License",
+      notice: "Tazel is free software under MPL-2.0 with the Progmasoft Exception 2.0.",
+      contact: "Contact",
     },
     docsNav: {
       groups: {
@@ -44,7 +50,8 @@ export const chrome: Record<Locale, Chrome> = {
   "de-DE": {
     skip: "Zum Inhalt springen",
     docs: "Dokument",
-    getStarted: "Loslegen",
+    releaseNotes: "Versionshinweise",
+    search: { label: "Die Dokumentation durchsuchen", placeholder: "Suchen", empty: "Nichts gefunden." },
     source: "Quellcode",
     language: "Sprache",
     toDark: "Zum dunklen Design wechseln",
@@ -55,7 +62,12 @@ export const chrome: Record<Locale, Chrome> = {
     footer: {
       tagline: "Ein Build-System und Paketmanager mit einer Projektdatei in Kotlin.",
       company: "Progmasoft",
-      license: "Tazel ist freie Software unter MPL-2.0 mit der Progmasoft Exception 2.0.",
+      project: "Projekt",
+      issues: "Fehler melden",
+      changelog: "Änderungsprotokoll",
+      license: "Lizenz",
+      notice: "Tazel ist freie Software unter MPL-2.0 mit der Progmasoft Exception 2.0.",
+      contact: "Kontakt",
     },
     docsNav: {
       groups: {
@@ -80,7 +92,8 @@ export const chrome: Record<Locale, Chrome> = {
   "ru-RU": {
     skip: "Перейти к содержанию",
     docs: "Документ",
-    getStarted: "Начать",
+    releaseNotes: "Примечания к выпуску",
+    search: { label: "Поиск по документации", placeholder: "Поиск", empty: "Ничего не найдено." },
     source: "Исходный код",
     language: "Язык",
     toDark: "Включить тёмную тему",
@@ -91,7 +104,12 @@ export const chrome: Record<Locale, Chrome> = {
     footer: {
       tagline: "Система сборки и менеджер пакетов с файлом проекта на Kotlin.",
       company: "Progmasoft",
-      license: "Tazel — свободное ПО под MPL-2.0 с Progmasoft Exception 2.0.",
+      project: "Проект",
+      issues: "Сообщить о проблеме",
+      changelog: "Журнал изменений",
+      license: "Лицензия",
+      notice: "Tazel — свободное ПО под MPL-2.0 с Progmasoft Exception 2.0.",
+      contact: "Контакты",
     },
     docsNav: {
       groups: {
@@ -116,7 +134,8 @@ export const chrome: Record<Locale, Chrome> = {
   "he-IL": {
     skip: "דילוג לתוכן",
     docs: "מסמך",
-    getStarted: "מתחילים",
+    releaseNotes: "הערות גרסה",
+    search: { label: "חיפוש בתיעוד", placeholder: "חיפוש", empty: "לא נמצא דבר." },
     source: "קוד מקור",
     language: "שפה",
     toDark: "מעבר לערכת הנושא הכהה",
@@ -127,7 +146,12 @@ export const chrome: Record<Locale, Chrome> = {
     footer: {
       tagline: "מערכת בנייה ומנהל חבילות עם קובץ פרויקט ב-Kotlin.",
       company: "Progmasoft",
-      license: "‏Tazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
+      project: "פרויקט",
+      issues: "דיווח על בעיה",
+      changelog: "יומן שינויים",
+      license: "רישיון",
+      notice: "‏Tazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
+      contact: "יצירת קשר",
     },
     docsNav: {
       groups: {

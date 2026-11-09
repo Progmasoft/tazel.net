@@ -36,9 +36,8 @@ export const home: Record<Locale, HomeText> = {
     eyebrow: "Build system and package manager",
     headline: "One project file. One command for each job.",
     lead: "Tazel reads a Kotlin project file, runs every step of the build as one graph and records each dependency in a lockfile. Tala targets compile with Talac; plugins build other languages, such as C and C++ with Progmasoft.CC or a CMake project with Progmasoft.CMake.",
-    start: "Get started",
+    start: "A first project",
     commands: "Commands",
-    release: "Tazel {version}",
     featuresHeading: "What Tazel does",
     featuresLead:
       "One program for the whole life of a project, from the first build to the published package.",
@@ -98,9 +97,8 @@ export const home: Record<Locale, HomeText> = {
     eyebrow: "Build-System und Paketmanager",
     headline: "Eine Projektdatei. Ein Befehl für jede Aufgabe.",
     lead: "Tazel liest eine Projektdatei in Kotlin, führt jeden Schritt des Builds als einen Graphen aus und hält jede Abhängigkeit in einer Lockdatei fest. Tala-Ziele kompiliert Talac; Plugins bauen andere Sprachen, etwa C und C++ mit Progmasoft.CC oder ein CMake-Projekt mit Progmasoft.CMake.",
-    start: "Loslegen",
+    start: "Ein erstes Projekt",
     commands: "Befehle",
-    release: "Tazel {version}",
     featuresHeading: "Was Tazel tut",
     featuresLead:
       "Ein Programm für das ganze Leben eines Projekts, vom ersten Build bis zum veröffentlichten Paket.",
@@ -160,9 +158,8 @@ export const home: Record<Locale, HomeText> = {
     eyebrow: "Система сборки и менеджер пакетов",
     headline: "Один файл проекта. Одна команда на каждую задачу.",
     lead: "Tazel читает файл проекта на Kotlin, выполняет все шаги сборки как один граф и записывает каждую зависимость в lock-файл. Цели Tala компилирует Talac; плагины собирают другие языки, например C и C++ с Progmasoft.CC или проект CMake с Progmasoft.CMake.",
-    start: "Начать",
+    start: "Первый проект",
     commands: "Команды",
-    release: "Tazel {version}",
     featuresHeading: "Что делает Tazel",
     featuresLead:
       "Одна программа на всю жизнь проекта — от первой сборки до опубликованного пакета.",
@@ -221,9 +218,8 @@ export const home: Record<Locale, HomeText> = {
     eyebrow: "מערכת בנייה ומנהל חבילות",
     headline: "קובץ פרויקט אחד. פקודה אחת לכל משימה.",
     lead: "‏Tazel קוראת קובץ פרויקט ב-Kotlin, מריצה כל צעד של הבנייה כגרף אחד ורושמת כל תלות בקובץ נעילה. יעדי Tala מהודרים עם Talac; תוספים בונים שפות אחרות, כמו C ו-C++ עם Progmasoft.CC או פרויקט CMake עם Progmasoft.CMake.",
-    start: "מתחילים",
+    start: "פרויקט ראשון",
     commands: "פקודות",
-    release: "Tazel {version}",
     featuresHeading: "מה Tazel עושה",
     featuresLead: "תוכנית אחת לכל חיי הפרויקט, מהבנייה הראשונה ועד החבילה שפורסמה.",
     features: [

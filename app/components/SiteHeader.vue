@@ -4,7 +4,13 @@
 <script setup lang="ts">
 import { chrome } from "~/content/chrome";
 import { localeNames, localePath, locales } from "~/content/locales";
-import { firstDocPage, repository } from "~/content/site";
+import {
+  firstDocPage,
+  latestChannel,
+  latestRelease,
+  releaseNotes,
+  repository,
+} from "~/content/site";
 
 const { locale, page, to } = useSiteLocale();
 const words = computed(() => chrome[locale.value]);
@@ -32,6 +38,10 @@ watch(
         <TazelLogo class="logo" />
       </NuxtLink>
 
+      <a class="release" :href="releaseNotes" :title="words.releaseNotes"
+        >{{ latestRelease }} <span>· {{ latestChannel }}</span></a
+      >
+
       <nav class="links" :aria-label="words.menu">
         <NuxtLink
           v-for="link in links"
@@ -42,14 +52,20 @@ watch(
         >
       </nav>
 
+      <SiteSearch class="site-search" />
+
       <div class="tools">
         <details ref="languages" class="dropdown">
-          <summary class="icon-button" :aria-label="words.language" :title="words.language">
+          <summary class="language" :aria-label="words.language" :title="words.language">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="9" />
               <path
                 d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"
               />
+            </svg>
+            <span>{{ localeNames[locale] }}</span>
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m7 10 5 5 5-5" />
             </svg>
           </summary>
           <ul>
@@ -72,9 +88,6 @@ watch(
             />
           </svg>
         </a>
-        <NuxtLink class="button button-brand start" :to="to(firstDocPage)">{{
-          words.getStarted
-        }}</NuxtLink>
         <details ref="menu" class="dropdown mobile">
           <summary class="icon-button" :aria-label="words.menu" :title="words.menu">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
@@ -103,7 +116,7 @@ watch(
 .bar {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
   height: 68px;
 }
 
@@ -140,11 +153,66 @@ watch(
   text-decoration: none;
 }
 
+.release {
+  flex: none;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-950);
+  font-size: 0.85rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.release span {
+  color: var(--ink-700);
+  font-weight: 500;
+}
+
+.release:hover {
+  background: var(--surface-muted);
+  text-decoration: none;
+}
+
+.site-search {
+  margin-inline-start: auto;
+}
+
 .tools {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-inline-start: auto;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: var(--ink-700);
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.language:hover {
+  background: var(--surface-muted);
+  color: var(--ink-950);
+}
+
+.language svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.8;
+}
+
+.language .chevron {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
 }
 
 .dropdown {
@@ -194,13 +262,6 @@ watch(
   display: none;
 }
 
-.start {
-  min-height: 38px;
-  margin-inline-start: 8px;
-  padding: 0 16px;
-  font-size: 0.94rem;
-}
-
 @media (max-width: 760px) {
   .links {
     display: none;
@@ -210,8 +271,15 @@ watch(
     display: block;
   }
 
-  .start {
+  .site-search,
+  .release,
+  .language span,
+  .language .chevron {
     display: none;
+  }
+
+  .tools {
+    margin-inline-start: auto;
   }
 }
 </style>

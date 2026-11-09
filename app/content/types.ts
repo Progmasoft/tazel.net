@@ -5,7 +5,8 @@
 export type Chrome = {
   skip: string;
   docs: string;
-  getStarted: string;
+  releaseNotes: string;
+  search: { label: string; placeholder: string; empty: string };
   source: string;
   language: string;
   toDark: string;
@@ -16,7 +17,12 @@ export type Chrome = {
   footer: {
     tagline: string;
     company: string;
+    project: string;
+    issues: string;
+    changelog: string;
     license: string;
+    notice: string;
+    contact: string;
   };
   notFound: { title: string; text: string; home: string };
   docsNav: {
@@ -41,7 +47,6 @@ export type HomeText = {
   lead: string;
   start: string;
   commands: string;
-  release: string;
   featuresHeading: string;
   featuresLead: string;
   features: readonly Feature[];
