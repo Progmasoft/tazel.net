@@ -150,7 +150,7 @@ export const chrome: Record<Locale, Chrome> = {
       issues: "דיווח על בעיה",
       changelog: "יומן שינויים",
       license: "רישיון",
-      notice: "‏Tazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
+      notice: "\u200FTazel היא תוכנה חופשית תחת MPL-2.0 עם Progmasoft Exception 2.0.",
       contact: "יצירת קשר",
     },
     docsNav: {

@@ -43,7 +43,7 @@ const results = computed(() => {
       const text = section.content.toLocaleLowerCase();
       if (!words.every((word) => heading.includes(word) || text.includes(word))) return null;
       const score = words.filter((word) => heading.includes(word)).length;
-      const at = text.indexOf(words[0]!);
+      const at = text.indexOf(words[0] ?? "");
       const excerpt =
         at < 0
           ? section.content.slice(0, 110)
@@ -77,8 +77,9 @@ function onKey(event: KeyboardEvent) {
   } else if (event.key === "ArrowUp" && count) {
     active.value = (active.value - 1 + count) % count;
     event.preventDefault();
-  } else if (event.key === "Enter" && count) {
-    go(results.value[active.value]!.section.id);
+  } else if (event.key === "Enter") {
+    const chosen = results.value[active.value];
+    if (chosen) go(chosen.section.id);
   } else if (event.key === "Escape") {
     open.value = false;
     input.value?.blur();
@@ -93,8 +94,12 @@ function onShortcut(event: KeyboardEvent) {
   }
 }
 
-onMounted(() => window.addEventListener("keydown", onShortcut));
-onBeforeUnmount(() => window.removeEventListener("keydown", onShortcut));
+onMounted(() => {
+  window.addEventListener("keydown", onShortcut);
+});
+onBeforeUnmount(() => {
+  window.removeEventListener("keydown", onShortcut);
+});
 </script>
 
 <template>

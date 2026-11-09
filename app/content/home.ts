@@ -214,10 +214,10 @@ export const home: Record<Locale, HomeText> = {
   "he-IL": {
     title: "Tazel — מערכת בנייה ומנהל חבילות",
     description:
-      "‏Tazel בונה, מריצה ובודקת פרויקטים מקובץ פרויקט אחד ב-Kotlin, ושומרת את התלויות שלהם בקובץ נעילה. את Tala היא בונה עם Talac, ושפות אחרות, כמו C ו-C++, דרך תוספים.",
+      "\u200FTazel בונה, מריצה ובודקת פרויקטים מקובץ פרויקט אחד ב-Kotlin, ושומרת את התלויות שלהם בקובץ נעילה. את Tala היא בונה עם Talac, ושפות אחרות, כמו C ו-C++, דרך תוספים.",
     eyebrow: "מערכת בנייה ומנהל חבילות",
     headline: "קובץ פרויקט אחד. פקודה אחת לכל משימה.",
-    lead: "‏Tazel קוראת קובץ פרויקט ב-Kotlin, מריצה כל צעד של הבנייה כגרף אחד ורושמת כל תלות בקובץ נעילה. יעדי Tala מהודרים עם Talac; תוספים בונים שפות אחרות, כמו C ו-C++ עם Progmasoft.CC או פרויקט CMake עם Progmasoft.CMake.",
+    lead: "\u200FTazel קוראת קובץ פרויקט ב-Kotlin, מריצה כל צעד של הבנייה כגרף אחד ורושמת כל תלות בקובץ נעילה. יעדי Tala מהודרים עם Talac; תוספים בונים שפות אחרות, כמו C ו-C++ עם Progmasoft.CC או פרויקט CMake עם Progmasoft.CMake.",
     start: "פרויקט ראשון",
     commands: "פקודות",
     featuresHeading: "מה Tazel עושה",
@@ -225,7 +225,7 @@ export const home: Record<Locale, HomeText> = {
     features: [
       {
         title: "קובץ פרויקט ב-Kotlin",
-        text: "קובץ הפרויקט הוא סקריפט Kotlin עם DSL בעל טיפוסים, כך שעורך משלים ובודק אותו. שמו BUILD.kts, ‏BUILD.tzl, ‏BUILD.tazel, ‏BUILD או Tazel.build; ‏Tazel מריצה אותו במארח הסקריפטים שלה, וכל מה שמחשב צריך הוא JRE 25.",
+        text: "קובץ הפרויקט הוא סקריפט Kotlin עם DSL בעל טיפוסים, כך שעורך משלים ובודק אותו. שמו BUILD.kts, \u200FBUILD.tzl, \u200FBUILD.tazel, \u200FBUILD או Tazel.build; \u200FTazel מריצה אותו במארח הסקריפטים שלה, וכל מה שמחשב צריך הוא JRE 25.",
       },
       {
         title: "רק מה שהשתנה",
@@ -233,7 +233,7 @@ export const home: Record<Locale, HomeText> = {
       },
       {
         title: "המחשב כולו",
-        text: "צעדי תוספים, הידורים וחבילות בדיקה הם יחידות בגרף אחד ורצים זה לצד זה. ‎--jobs, ‏‎--cpus ו-‎--memory קובעים את הגבולות, ו-‎--profile כותב עקבה.",
+        text: "צעדי תוספים, הידורים וחבילות בדיקה הם יחידות בגרף אחד ורצים זה לצד זה. ‎--jobs, \u200F‎--cpus ו-‎--memory קובעים את הגבולות, ו-‎--profile כותב עקבה.",
       },
       {
         title: "מטמון ובנייה מרחוק",
@@ -241,11 +241,11 @@ export const home: Record<Locale, HomeText> = {
       },
       {
         title: "קובץ נעילה קריא",
-        text: "‏LOCK.sqlite3 רושם במה הפרויקט תלוי, ‏LOCK.dump כותב זאת כטקסט לסקירה, ו-tazel lock graph מראה מי משתמש במה.",
+        text: "\u200FLOCK.sqlite3 רושם במה הפרויקט תלוי, \u200FLOCK.dump כותב זאת כטקסט לסקירה, ו-tazel lock graph מראה מי משתמש במה.",
       },
       {
         title: "תוספים ב-Kotlin",
-        text: "תוסף הוא JAR, מקומי או מ-ViGet, שמוסיף בלוקים לקובץ הפרויקט וצעדים לבנייה, כמו cc { } עבור C ו-C++. ‏Tazel בודקת את המתאר שלו ואת ה-SHA-256 שלו לפני שהיא טוענת אותו.",
+        text: "תוסף הוא JAR, מקומי או מ-ViGet, שמוסיף בלוקים לקובץ הפרויקט וצעדים לבנייה, כמו cc { } עבור C ו-C++. \u200FTazel בודקת את המתאר שלו ואת ה-SHA-256 שלו לפני שהיא טוענת אותו.",
       },
     ],
     stepsHeading: "מקובץ פרויקט לתוכנית",
@@ -256,18 +256,18 @@ export const home: Record<Locale, HomeText> = {
       },
       {
         title: "לבנות",
-        text: "‏tazel build מריצה את הצעדים של התוספים, מהדרת את יעדי Tala עם Talac וכותבת את התוכנית ל-build/debug או ל-build/release.",
+        text: "\u200Ftazel build מריצה את הצעדים של התוספים, מהדרת את יעדי Tala עם Talac וכותבת את התוכנית ל-build/debug או ל-build/release.",
       },
       {
         title: "להריץ ולבדוק",
-        text: "‏tazel run בונה קובץ הרצה אחד ומפעילה אותו; ‏tazel test בונה ומריצה את חבילות הבדיקה.",
+        text: "\u200Ftazel run בונה קובץ הרצה אחד ומפעילה אותו; \u200Ftazel test בונה ומריצה את חבילות הבדיקה.",
       },
     ],
     sampleHeading: "כל פרויקט מתחיל באותה דרך",
     sampleLead: "כמה שורות נותנות שם לפרויקט ולתוכנית שלו; הבנייה השנייה לא מוצאת מה לעשות.",
     closingHeading: "תוכנה חופשית, שמפותחת בגלוי",
     closingText:
-      "קוד המקור של Tazel, הבעיות והגרסאות שלו נמצאים ב-GitHub. ‏Talac, ‏talafmt ו-talalint הן תוכניות נפרדות עם גרסאות משלהן; פרויקט צריך אותן רק ליעדי Tala.",
+      "קוד המקור של Tazel, הבעיות והגרסאות שלו נמצאים ב-GitHub. \u200FTalac, \u200Ftalafmt ו-talalint הן תוכניות נפרדות עם גרסאות משלהן; פרויקט צריך אותן רק ליעדי Tala.",
     closingAction: "Tazel ב-GitHub",
   },
 };
