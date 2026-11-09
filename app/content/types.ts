@@ -7,7 +7,6 @@ export type Chrome = {
   docs: string;
   reference: string;
   plugins: string;
-  releases: string;
   getStarted: string;
   source: string;
   language: string;
