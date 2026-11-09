@@ -50,7 +50,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "de-DE": {
     skip: "Zum Inhalt springen",
-    docs: "Doku",
+    docs: "Dokument",
     reference: "Referenz",
     plugins: "Plugins",
     releases: "Releases",
@@ -93,7 +93,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "ru-RU": {
     skip: "Перейти к содержанию",
-    docs: "Документация",
+    docs: "Документ",
     reference: "Справочник",
     plugins: "Плагины",
     releases: "Выпуски",
@@ -136,7 +136,7 @@ export const chrome: Record<Locale, Chrome> = {
   },
   "he-IL": {
     skip: "דילוג לתוכן",
-    docs: "תיעוד",
+    docs: "מסמך",
     reference: "עיון",
     plugins: "תוספים",
     releases: "גרסאות",
