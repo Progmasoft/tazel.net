@@ -7,7 +7,7 @@ import type { Chrome } from "./types";
 export const chrome: Record<Locale, Chrome> = {
   "en-US": {
     skip: "Skip to content",
-    docs: "Docs",
+    docs: "Document",
     reference: "Reference",
     plugins: "Plugins",
     releases: "Releases",
